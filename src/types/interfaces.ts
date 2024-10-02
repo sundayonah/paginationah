@@ -1,12 +1,12 @@
-export interface PaginationOptions {
-  currentPage: number;
-  totalItems: number;
-  itemsPerPage: number;
+export interface PaginationahOptions {
+   currentPage: number;
+   totalItems: number;
+   itemsPerPage: number;
 }
 
-export interface PaginationResult {
-  totalPages: number;
-  currentPage: number;
-  nextPage: number | null;
-  previousPage: number | null;
+export interface PaginationahResult {
+   totalPages: number;
+   currentPage: number;
+   nextPage: number | null;
+   previousPage: number | null;
 }

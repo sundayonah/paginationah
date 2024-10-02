@@ -1,8 +1,5 @@
 # paginationah
 
-<!-- [![npm version](https://img.shields.io/npm/v/paginationah.svg)](https://www.npmjs.com/package/paginationah)
-[![license](https://img.shields.io/npm/l/paginationah.svg)](https://www.npmjs.com/package/paginationah) -->
-
 A simple, efficient TypeScript pagination utility for handling pagination logic in your applications.
 
 ## Table of Contents
@@ -20,20 +17,17 @@ A simple, efficient TypeScript pagination utility for handling pagination logic 
 
 Install the `paginationah` package via npm:
 
-````bash
 npm install paginationah
 or using Yarn:
 yarn add paginationah
 
-## Examples
-
-### Basic Example
+## usage
 
 ```typescript
 'use client';
 
 import { useState } from 'react';
-import { paginate } from 'paginationah';
+import { paginationah } from 'paginationah';
 import { User } from '../page';
 
 interface UsersListProps {
@@ -43,7 +37,7 @@ interface UsersListProps {
 const UsersList: React.FC<UsersListProps> = ({ users }) => {
    const [currentPage, setCurrentPage] = useState(1);
    const itemsPerPage = 3;
-   const pagination = paginate({
+   const pagination = paginationah({
       currentPage,
       totalItems: users.length,
       itemsPerPage,
@@ -130,5 +124,25 @@ const UsersList: React.FC<UsersListProps> = ({ users }) => {
 };
 
 export default UsersList;
+```
 
-````
+## API Documentation
+
+### `paginate({ currentPage, totalItems, itemsPerPage }): PaginationResult`
+
+-  **currentPage**: The current page number.
+-  **totalItems**: The total number of items.
+-  **itemsPerPage**: The number of items per page.
+
+**Returns**:
+
+-  **totalPages**: Total number of pages.
+-  **currentPage**: Current page number.
+-  **nextPage**: The next page number or `null` if it's the last page.
+-  **previousPage**: The previous page number or `null` if it's the first page.
+
+## keywords
+
+-  \*\*paginationah
+-  \*\*typescript
+-  \*\*npm

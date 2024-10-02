@@ -1,15 +1,15 @@
-import { paginate } from './pagination';
-import { PaginationOptions } from './types/interfaces';
+import { paginationah } from './pagination';
+import { PaginationahOptions } from './types/interfaces';
 
 describe('Pagination Library', () => {
    it('should return correct pagination details for first page', () => {
-      const options: PaginationOptions = {
+      const options: PaginationahOptions = {
          currentPage: 1,
          totalItems: 50,
          itemsPerPage: 10,
       };
 
-      const result = paginate(options);
+      const result = paginationah(options);
 
       expect(result.totalPages).toBe(5);
       expect(result.currentPage).toBe(1);
@@ -18,13 +18,13 @@ describe('Pagination Library', () => {
    });
 
    it('should return correct pagination details for last page', () => {
-      const options: PaginationOptions = {
+      const options: PaginationahOptions = {
          currentPage: 5,
          totalItems: 50,
          itemsPerPage: 10,
       };
 
-      const result = paginate(options);
+      const result = paginationah(options);
 
       expect(result.totalPages).toBe(5);
       expect(result.currentPage).toBe(5);
