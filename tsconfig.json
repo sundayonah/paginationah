@@ -1,0 +1,14 @@
+{
+   "compilerOptions": {
+      "module": "ES6",
+      "target": "ES5",
+      "lib": ["ES6", "DOM"],
+      "declaration": true,
+      "outDir": "./dist",
+      "strict": true,
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "skipLibCheck": true
+   },
+   "include": ["src/**/*", "node_modules/paginationah/dist/**/*"]
+}
