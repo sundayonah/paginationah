@@ -1,6 +1,6 @@
 {
-   "name": "paginationah",
-   "version": "1.0.7",
+   "name": "@onah/paginationah",
+   "version": "1.0.9",
    "main": "dist/pagination.js",
    "types": "dist/pagination.d.ts",
    "type": "module",
@@ -18,7 +18,7 @@
       "npm"
    ],
    "license": "MIT",
-   "author": "",
+   "author": "onah",
    "description": "",
    "devDependencies": {
       "@eslint/js": "^9.11.1",
